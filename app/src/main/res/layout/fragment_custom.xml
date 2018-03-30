@@ -12,6 +12,6 @@
             android:id="@+id/fragment_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="fragment"/>
+            tools:text="fragment"/>
     </android.support.v4.widget.SwipeRefreshLayout>
 </FrameLayout>

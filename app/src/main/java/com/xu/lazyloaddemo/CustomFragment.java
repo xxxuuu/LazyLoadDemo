@@ -53,6 +53,10 @@ public class CustomFragment extends AbsLazyFragment implements SwipeRefreshLayou
         initData();
     }
 
+
+    /**
+     * 重写加载数据方法
+     */
     @Override
     void initData()
     {
@@ -68,6 +72,5 @@ public class CustomFragment extends AbsLazyFragment implements SwipeRefreshLayou
             }
         }, 2000);
     }
-
 
 }

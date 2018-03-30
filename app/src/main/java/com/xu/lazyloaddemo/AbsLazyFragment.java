@@ -67,4 +67,22 @@ public abstract class AbsLazyFragment extends Fragment
         super.onActivityCreated(savedInstanceState);
         lazyInitData();
     }
+
+    @Override
+    public void onDestroy()
+    {
+        //Fragment给回收后需重新加载
+        isInitData = false;
+        isPrepareView = false;
+        super.onDestroy();
+    }
+
+    @Override
+    public void onDestroyView()
+    {
+        //Fragment给回收后需重新加载
+        isInitData = false;
+        isPrepareView = false;
+        super.onDestroyView();
+    }
 }
